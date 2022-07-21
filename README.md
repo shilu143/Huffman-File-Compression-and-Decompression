@@ -1,1 +1,1 @@
-# Huffman-File-Compression-and-Decompression-using-c-
+# Huffman-File-Compression-and-Decompression
