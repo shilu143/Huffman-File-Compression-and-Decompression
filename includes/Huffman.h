@@ -55,9 +55,17 @@ private:
 
 public:
     Huffman() {
+        
+#ifdef _WIN32 // Includes both 32 bit and 64 bit
+        inputFile.open("originalData\input.txt", ios::in);
+        outputFile.open("compressedFile\output.dat", ios::out | ios::binary);
+        decodedFile.open("decodedFile\decodedfile.txt", ios::out);
+#else
         inputFile.open("originalData/input.txt", ios::in);
         outputFile.open("compressedFile/output.dat", ios::out | ios::binary);
         decodedFile.open("decodedFile/decodedfile.txt", ios::out);
+#endif
+
         originalData = "";
         topIdx = 8;
         constraint = 0;
