@@ -134,7 +134,19 @@ void buildHuffmanTree(string text) {
     }
 }
 int main() {
-    string text = "shilu";
+    string line, text = "";
+    ifstream myfile("input.txt");
+    if (myfile.is_open())
+    {
+        while (getline(myfile, line))
+        {
+            text += line;
+        }
+        myfile.close();
+    }
+    else cout << "Unable to open file";
+
+    // string text = "shilu";
     buildHuffmanTree(text);
     cout << "\nEncodedBits Size = " << encodedbits.size() << "\n";
     encodeInFile();
