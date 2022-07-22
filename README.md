@@ -13,5 +13,5 @@ assigns a binary code to each character occuring in the input file
  huffman code which overall reduces the file size by 40-50%.
  For reference check [this](https://www.programiz.com/dsa/huffman-coding).
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/shilu143/Huffman-File-Compression-and-Decompression/blob/main/LICENSE.md)
 
